@@ -230,4 +230,9 @@ async function getCourses(filter = {}) {
 
 ### Importing a json file to mongodb
 
-> mongoimport --db \<database name\> --collection \<collection name\> --file \<json file to import\>
+> mongoimport --db \<database name\> --collection \<collection name\> --file \<json file to import\> --jsonArray
+
+Add __--jsonArray__ if your json file is an array.
+
+**Tip** : From Version 4.4, (not sure about the next versions) mongodb will not download the tools automatically such as mongoimport and mongoexport. You have to download separately from the link [https://www.mongodb.com/try/download/database-tools](https://www.mongodb.com/try/download/database-tools) and extract it in the bin folder.
+
