@@ -6,6 +6,7 @@ const courseSchema = new Schema({
   tags: [String],
   date: { type: Date, default: Date.now },
   isPublished: Boolean,
+  price: Number,
 });
 
 const Course = model("Course", courseSchema);
